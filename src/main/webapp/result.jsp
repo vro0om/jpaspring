@@ -4,13 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Pand</title>
+<title>Panda</title>
 </head>
 <body>
 
-	<form action="getAlien">
-	<input type="text" name="aid"></br>
-		<input type="submit">
-	</form>
+	${alien}
+	 
 </body>
 </html>
