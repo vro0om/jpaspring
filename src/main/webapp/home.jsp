@@ -10,7 +10,19 @@
 	<form action="addAlien">
 		<input type="text" name="aid"></br>
 		<input type="text" name="name"></br>
-		<input type="submit">
+		<input type="text" name="tech"></br>
+		<input value="save"type="submit">
+	</form>
+	<form action="getAlien">
+		<input type="text" name="aid"></br>
+		
+		<input value="fetch"type="submit">
+	</form>
+	Delete
+	<form action="deleteAlien">
+		<input type="text" name="aid"></br>
+		
+		<input value="delete"type="submit">
 	</form>
 </body>
 </html>

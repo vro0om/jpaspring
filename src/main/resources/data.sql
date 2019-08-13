@@ -1,1 +1,5 @@
-insert into alien values(123,'takshima')
+insert into alien values(123,'takshima','salsa')
+insert into alien values(124,'purvi', 'hiphop')
+insert into alien values(125,'amelia','ngo')
+insert into alien values(126,'divya','bachata')
+insert into alien values(127,'daniel','belly')
