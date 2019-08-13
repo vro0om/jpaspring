@@ -32,25 +32,19 @@ public class AlienController {
 
 	}
 
+	
 	@RequestMapping("/getAlien")
 	public ModelAndView getAlien(@RequestParam int aid) {
-
-		ModelAndView mv = new ModelAndView("shwoAlien.jsp");
+		ModelAndView mv = new ModelAndView();
 		Alien alien = al.findById(aid).orElse(new Alien());
 		mv.addObject(alien);
+		System.out.println(al.findByTech("salsa"));
+		System.out.println(al.findByAidGreaterThan(125));
+		System.out.println(al.findByCustom("salsa"));
+		mv.setViewName("result.jsp");
 		return mv;
 
 	}
-
-	@RequestMapping("/deleteAlien")
-	public ModelAndView deleteAlien(@RequestParam int aid) {
-
-		ModelAndView mv = new ModelAndView("resultAlien.jsp");
-		al.deleteById(aid);
-		List<Alien> aliens = new ArrayList<>();
-		al.findAll().forEach(aliens::add);
-		mv.addObject(aliens);
-		return mv;
-
-	}
+	
+	
 }
