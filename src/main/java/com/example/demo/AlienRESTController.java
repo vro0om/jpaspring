@@ -17,7 +17,7 @@ public class AlienRESTController {
 	@Autowired
 	AlienDao al;
 	
-	@RequestMapping("/aliens")
+	@RequestMapping(path="/aliens",produces= {"application/xml"})
 	@ResponseBody
 	public List<Alien> getAliens()
 	{
